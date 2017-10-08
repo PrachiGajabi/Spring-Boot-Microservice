@@ -1,0 +1,4 @@
+FROM Java:8
+EXPOSE 8080:8080
+ADD /tmp/spring-boot-microservice-docker-0.0.1-SNAPSHOT.jar spring-boot-microservice-docker-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java", "-jar", "spring-boot-microservice-docker-0.0.1-SNAPSHOT.jar"]
